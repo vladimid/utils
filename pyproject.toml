@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "utils"
+version = "0.1.0"
+description = "Small shell and configuration utilities"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "vladimid" }]
+
+[project.scripts]
+utils = "utils.cli:main"
+
+[tool.setuptools]
+packages = ["utils"]
